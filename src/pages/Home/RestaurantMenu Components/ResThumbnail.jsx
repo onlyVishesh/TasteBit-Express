@@ -1,10 +1,8 @@
 import { faLeaf, faStar } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React from "react";
-
-import { CDN_URL } from "../../../utils/config";
 
 import "./ResThumbnail.css";
+import { CDN_URL } from "../../../utils/config";
 
 const ResThumbnail = (props) => {
   const {

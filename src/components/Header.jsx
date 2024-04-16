@@ -16,7 +16,6 @@ const Header = () => {
   const onlineStatus = useStatus();
   const location = useLocation();
   const cartItems = useSelector((store) => store.cart.items);
-  console.log(cartItems);
   let totalQuantity = 0;
   cartItems.forEach(item => {
     totalQuantity += item.quantity;

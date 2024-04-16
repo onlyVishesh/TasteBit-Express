@@ -7,12 +7,14 @@ const useRestaurantMenu = (resId) => {
     longitude: 77.2373,
   });
   const [resMenu, setResMenu] = useState([]);
-
   useEffect(() => {
     fetchLocation();
+  }, []);
+
+  useEffect(() => {
     const menuApiURL = menuApi(location.latitude, location.longitude);
     fetchMenu(menuApiURL);
-  }, []);
+  }, [location.latitude, location.longitude]);
 
   const fetchLocation = async () => {
     const response = await fetch("https://ipapi.co/json/");

@@ -10,9 +10,12 @@ const useRestaurantCard = () => {
   const [error, setError] = useState(null);
   useEffect(() => {
     fetchLocation();
+  }, []);
+
+  useEffect(() => {
     const cardApiURL = cardApi(location.latitude, location.longitude);
     fetchCard(cardApiURL);
-  }, []);
+  }, [location.latitude, location.longitude]);
 
   const fetchLocation = async () => {
     const response = await fetch("https://ipapi.co/json/");

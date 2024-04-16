@@ -21,7 +21,10 @@ const RestaurantMenu = () => {
   const { resId } = useParams();
 
   const resMenu = useRestaurantMenu(resId);
-  const currentResName = resMenu?.cards?.[0]?.card?.card?.info?.name || "";
+  const currentResName =
+    resMenu?.cards?.[2]?.card?.card?.info?.name === undefined
+      ? ""
+      : resMenu?.cards?.[2]?.card?.card?.info?.name;
   const resName = useSelector((store) => store.cart.resName);
   const cartItems = useSelector((store) => store.cart.items);
   const [showOverlay, setShowOverlay] = useState(false);
@@ -66,9 +69,9 @@ const RestaurantMenu = () => {
     <RestaurantMenuShimmer />
   ) : (
     <div className="res-menu">
-      <ResThumbnail resMenuThumbnail={resMenu?.cards[0]?.card?.card?.info} />
+      <ResThumbnail resMenuThumbnail={resMenu?.cards[2]?.card?.card?.info} />
       <div className="res-coupons">
-        {resMenu?.cards[1]?.card?.card?.gridElements?.infoWithStyle.offers.map(
+        {resMenu?.cards[3]?.card?.card?.gridElements?.infoWithStyle.offers.map(
           (offer) => {
             return (
               <div className="res-coupon" key={offer.info.offerIds}>
@@ -77,7 +80,11 @@ const RestaurantMenu = () => {
                   <figcaption>{offer?.info?.header}</figcaption>
                 </figure>
                 <section className="offer-details">
-                  {offer?.info?.couponCode + "  |  " + offer?.info?.description}
+                  {(offer?.info?.couponCode !== undefined
+                    ? offer?.info?.couponCode
+                    : "") +
+                    "  |  " +
+                    offer?.info?.description}
                 </section>
               </div>
             );
@@ -85,7 +92,7 @@ const RestaurantMenu = () => {
         )}
       </div>
       <section className="menus">
-        {resMenu?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards
+        {resMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards
           ?.filter((menu) => {
             return (
               menu?.card?.card?.itemCards !== undefined &&

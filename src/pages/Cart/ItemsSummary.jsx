@@ -32,10 +32,10 @@ const ItemsSummary = () => {
   });
 
   let deliveryCost = 30;
-  if (resMenu.cards[0].card.card.info.sla.lastMileTravel > 0.5) {
+  if (resMenu.cards[2].card.card.info.sla.lastMileTravel > 0.5) {
     deliveryCost =
       deliveryCost +
-      Math.round(resMenu.cards[0].card.card.info.sla.lastMileTravel * 0.5);
+      Math.round(resMenu.cards[2].card.card.info.sla.lastMileTravel * 0.5);
   }
 
   let totalGST = Math.round(itemTotal * 5) / 100;
@@ -49,16 +49,16 @@ const ItemsSummary = () => {
         <div className="cart-res-detail">
           <img
             src={
-              CDN_URL + resMenu?.cards[0]?.card?.card?.info?.cloudinaryImageId
+              CDN_URL + resMenu?.cards[2]?.card?.card?.info?.cloudinaryImageId
             }
             alt=""
           />
           <div>
             <h4 className="cart-res-name">
-              {resMenu?.cards[0]?.card?.card?.info?.name}
+              {resMenu?.cards[2]?.card?.card?.info?.name}
             </h4>
             <p className="cart-res-locality">
-              {resMenu?.cards[0]?.card?.card?.info?.locality}
+              {resMenu?.cards[2]?.card?.card?.info?.locality}
             </p>
           </div>
         </div>

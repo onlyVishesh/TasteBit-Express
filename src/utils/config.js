@@ -16,10 +16,10 @@ export const shimmerCardUnits = 32;
 export const githubLink = "https://github.com/onlyVishesh";
 export const repoLink = "https://github.com/onlyVishesh/Namaste-React";
 export const repoIssue = "https://github.com/onlyVishesh/Namaste-React/issues";
-export const linkedinLink = "https://www.linkedin.com/in/vishesh-maurya-48b1b8257";
+export const linkedinLink =
+  "https://www.linkedin.com/in/vishesh-maurya-48b1b8257";
 export const twitterLink = "https://twitter.com/onlyVishesh14";
 export const email = "visheshmaurya14@gmail.com";
-
 
 export const itemDescriptions = [
   "Savor the exquisite flavors of our culinary creations, expertly crafted for your enjoyment.",
