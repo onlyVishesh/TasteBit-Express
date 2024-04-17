@@ -24,11 +24,15 @@ TasteBit Express is a comprehensive project developed using React and Parcel bun
 
 ## Demo Video
 
-Watch the demo video to see the portfolio website in action:
+Watch the demo video to see the portfolio website in action: 
+
+
+https://github.com/onlyVishesh/TasteBit-Express/assets/121187728/00ac713c-2343-41d3-a5be-69d7a41f91fb
+
 
 ## Live Website
 
-Visit the live website to explore my portfolio: [Website]()
+Visit the live website to explore your Taste: [Website](https://tastebit-express.vercel.app/)
 
 ## Description
 
@@ -78,13 +82,33 @@ Throughout this journey, I've not only gained theoretical knowledge but also pra
 ## 📃 Pages
 
 - Home Page
+  ![image](https://github.com/onlyVishesh/TasteBit-Express/assets/121187728/18ca4fc5-6ba2-446f-8449-108b1c0789e3)
+
 - Restaurant Menu Page
+  ![image](https://github.com/onlyVishesh/TasteBit-Express/assets/121187728/2e142642-493d-41eb-aa23-e2b32856423e)
+
 - Cart Page
+  ![image](https://github.com/onlyVishesh/TasteBit-Express/assets/121187728/b4edb951-1335-49d1-afc0-0f3dd064c3f1)
+
+  
 - About Page
+  ![image](https://github.com/onlyVishesh/TasteBit-Express/assets/121187728/2a9f1195-9341-45dc-adf8-0b524a900178)
+
 - Contact Page
+  ![image](https://github.com/onlyVishesh/TasteBit-Express/assets/121187728/f20fdcaa-1770-41e3-b054-eaefa537f201)
+
+  
 - Login Page
+  ![image](https://github.com/onlyVishesh/TasteBit-Express/assets/121187728/71c89b92-cb14-44c3-aa98-44719a70c873)
+
+  
 - 404 Error Page
+  ![image](https://github.com/onlyVishesh/TasteBit-Express/assets/121187728/c573e998-9253-4ca4-8806-079cd6a08024)
+
+  
 - Offline Page
+  ![image](https://github.com/onlyVishesh/TasteBit-Express/assets/121187728/7ac776ff-8add-4c43-b178-7d435d7ab689)
+
 
 ## 🌟 Getting Started
 
